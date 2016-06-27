@@ -1,0 +1,17 @@
+﻿<Window x:Class="Body_color.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" SizeToContent="WidthAndHeight"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        Width=" 1024"
+        Height=" 540"
+        >
+    <Grid>
+        <Image x:Name="ImageColor" Stretch="Uniform"/>
+        <Canvas x:Name="CanvasBody" 
+                Width="{Binding ElementName=imageColor,Path=ActualWidth}"
+                Height="{Binding ElementName=imageColor,Path=ActualHeight}"
+                />
+    </Grid>
+</Window>
